@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">  I loved the FOOD and the service!   </p>
+   <button onclick="meena()">Try it</button>
+    <script>
+       
+        var feedback = "   I loved the FOOD and the service!   ";
+       console.log(feedback);
+
+        function meena(){
+        let str=document.getElementById("demo").innerHTML
+        let rep=str.replace(/Food/ig,"Ambience");
+        document.getElementById("demo").innerHTML=rep;
+        let result=feedback.trim().toLowerCase()
+        console.log(result);
+        console.log(result.indexOf("service"))
+        
+        let output=str.split(" ");
+        console.log(output);
+        
+        }
+     
+     
+    </script>
+
+
+</body>
+</html>
