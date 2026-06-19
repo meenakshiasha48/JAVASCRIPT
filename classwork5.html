@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="myorder()"> click me</button>
+    <script>
+        
+    let order ={ 
+itemName:'lotion',
+isDelivered:'yes',
+daysSinceDelivery:8
+    };
+function myorder(){
+ let iseligible= order.isDelivered==true && order.daysSinceDelivery>=7;
+ let message= iseligible? "Eligible for return": "Return period expired";
+ console.log(message);
+ document.write(message);
+ let check=order.itemName? "its present": "its not present";
+ console.log(check);
+delete(daysSinceDelivery);
+let ordercheck=order.daysSinceDelivery? "its present":'its not present'
+console.log(ordercheck);
+
+}
+    
+  
+
+
+    </script>
+</body>
+</html>
