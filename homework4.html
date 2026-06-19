@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="text" id="res"><br>
+    <button onclick="call()">TRY ME </button>
+<script>
+let x=Math.floor(Math.random() * 50) + 1
+console.log(x)
+ function call() {
+    let val=document.getElementById("res").value;
+    console.log(val);
+    
+    let result= Number(val);
+    console.log(result)
+    console.log(typeof(result));
+    let logsqvalue=Math.log(Math.sqrt(result));
+    console.log(logsqvalue);
+    console.log(Math.PI);
+    console.log("20"*5);
+
+    let max =Math.max(10,20,x);
+    console.log(max);
+    let min= Math.min(10,20,x)
+    console.log(min);
+    
+
+    
+    
+    
+    
+
+ }
+ 
+</script>
+
+
+
+
+
+</body>
+
+</html>
