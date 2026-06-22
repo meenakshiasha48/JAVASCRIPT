@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ 
+<p id="demo"></p>
+
+
+<script>
+
+    let friends={
+        name:"john",
+        birthDate:"1999-07-05"
+    }
+ function getBirthdayDetails(friends){
+ let na=friends.name
+ console.log(na);
+ let date=friends.birthDate
+ console.log(date);
+ let newdate=new Date(friends.birthDate)
+ console.log(newdate);
+ let year =newdate.getFullYear();
+  console.log(year);
+  var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+ let month= months[newdate.getMonth()];
+  console.log(month);
+ let day =newdate.getDate();
+ console.log(day);
+
+
+
+
+ let age= year-1970;
+ console.log(age);
+ 
+ 
+ 
+ }
+getBirthdayDetails(friends)
+    </script>
+
+</body>
+</html>
