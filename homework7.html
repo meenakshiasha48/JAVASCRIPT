@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+<p id="demo"></p>
+
+<script>
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2006,7, 22);
+let lastyear=someday.getFullYear();
+console.log(lastyear);
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+ let month= months[someday.getMonth()];
+  console.log(month);
+  let day=someday.getDate();
+console.log(day);
+let gap=today.getFullYear()-someday.getFullYear()
+console.log(gap);
+
+
+if (someday > today) {
+  text = "It has not been more than a year since that date";
+  console.log(text);
+  
+} else {
+  text = "It has been more than a year since that date";
+  console.log(text);
+  
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
