@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+for ( let i=0;i<5;i++){
+   let code1=prompt("enter the code for product");
+let code=Number(code1);
+console.log(code);
+let quantity1=prompt("enter the quantity ");
+let quantity=Number(quantity1)
+console.log(quantity);
+let price=0;
+
+    switch(code) {
+case 1: 
+        price=30;
+         break;
+case 2 :
+        price=10;
+        break;
+case 3:
+    price=50;
+    break;
+default :
+  
+  
+   console.log("will not add in calculation");
+   
+continue;
+        
+    }
+    
+let totalprice= price * quantity;
+
+ console.log("total price is"+ totalprice);
+       
+  
+if (totalprice>100)
+{
+    console.log("High purchase");
+  }
+else {
+    console.log('normal purchase ');
+    
+}
+}
+
+
+
+    </script>
+</body>
+</html>
